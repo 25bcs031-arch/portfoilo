@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kanishka M | Computer Science Student</title>
+  <meta name="description" content="Portfolio of Kanishka M, a computer science student from Coimbatore skilled in C, Python, Java and JavaScript.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-top">
+      <a href="#home" class="logo" aria-label="Kanishka M, home">KM</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <nav id="nav" aria-label="Main">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Academics</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="side-contact">
+      <h2>Contact</h2>
+      <p><a href="mailto:kanishkamohanraj31@gmail.com">kanishkamohanraj31@gmail.com</a></p>
+      <p><a href="tel:+918610828902">+91 86108 28902</a></p>
+      <p>Coimbatore, Tamil Nadu</p>
+      <p><a href="https://github.com/25bcs031-arch" target="_blank" rel="noopener">github.com/25bcs031-arch</a></p>
+    </div>
+  </aside>
+
+  <main id="main">
+    <section id="home" class="hero">
+      <p class="hello" id="typed" aria-live="off">Hi, I'm</p>
+      <h1>Kanishka M</h1>
+      <p class="role">Computer Science Student</p>
+      <p class="lead">I build programs in C, Python, Java and JavaScript, and I am learning cloud and process mining on the side. I am looking for an entry-level role where I can put these skills to work.</p>
+      <div class="actions">
+        <a class="btn primary" href="assets/Kanishka_M_Resume.pdf" download>Download resume</a>
+        <a class="btn" href="#projects">See my projects</a>
+      </div>
+      <dl class="facts">
+        <div><dt>Certifications</dt><dd data-count="13">13</dd></div>
+        <div><dt>Languages coded in</dt><dd data-count="4">4</dd></div>
+        <div><dt>Projects</dt><dd data-count="2">2</dd></div>
+      </dl>
+    </section>
+
+    <section id="about">
+      <h2>About me</h2>
+      <p>I am a computer science student from Coimbatore, Tamil Nadu. I have a foundation in C, Python, Java and JavaScript, and I like turning ideas into small working programs, such as a library system and a marks analyzer.</p>
+      <p>Outside of class I take online courses in programming, data structures, Microsoft Azure, MongoDB and Celonis process mining. I speak Tamil and English.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Technical skills</h2>
+      <ul class="skills">
+        <li><span>C</span><div class="bar"><i style="--w:80%"></i></div></li>
+        <li><span>Python</span><div class="bar"><i style="--w:80%"></i></div></li>
+        <li><span>Java</span><div class="bar"><i style="--w:75%"></i></div></li>
+        <li><span>JavaScript</span><div class="bar"><i style="--w:70%"></i></div></li>
+      </ul>
+      <p class="note">Bars show my own comfort level with each language.</p>
+      <h3>Languages known</h3>
+      <p class="chips"><span>Tamil</span><span>English</span></p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <article class="project">
+          <h3>Library Book Borrowing, Return and Fine Calculation System</h3>
+          <p>A system that records which member borrowed which book, handles returns, and calculates the fine when a book comes back late.</p>
+          <a href="https://github.com/25bcs031-arch" target="_blank" rel="noopener">View on GitHub</a>
+        </article>
+        <article class="project">
+          <h3>Student Marks Analyzer (In-Memory)</h3>
+          <p>A program that keeps student marks in memory and analyzes them, so results can be reviewed without a database.</p>
+          <a href="https://github.com/25bcs031-arch" target="_blank" rel="noopener">View on GitHub</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Academic performance</h2>
+      <table>
+        <thead><tr><th scope="col">Semester</th><th scope="col">Marks</th></tr></thead>
+        <tbody>
+          <tr><td>1st Semester</td><td>66</td></tr>
+          <tr><td>2nd Semester</td><td>71</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="certifications">
+      <h2>Certifications and courses</h2>
+      <div class="filters" role="group" aria-label="Filter by provider">
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="Coursera">Coursera</button>
+        <button data-filter="Celonis Academy">Celonis</button>
+        <button data-filter="Other">Others</button>
+      </div>
+      <ul class="certs" id="certs"></ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Send me a message and it will open in your email app.</p>
+      <form id="contactForm" novalidate>
+        <label>Your name
+          <input type="text" id="name" required autocomplete="name">
+        </label>
+        <label>Your email
+          <input type="email" id="email" required autocomplete="email">
+        </label>
+        <label>Message
+          <textarea id="message" rows="5" required></textarea>
+        </label>
+        <p class="error" id="formError" role="alert"></p>
+        <button class="btn primary" type="submit">Send message</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Kanishka M. Built with HTML, CSS and JavaScript.</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
